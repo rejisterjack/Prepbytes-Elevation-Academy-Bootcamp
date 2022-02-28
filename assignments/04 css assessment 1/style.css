@@ -1,0 +1,35 @@
+h1{
+  color: red;
+}
+h2{
+  color: red;
+  font-style: italic;
+}
+p{
+  color: #7e533f;
+}
+ol{
+  color: #7d2827;
+  line-height: 45px;
+}
+ul{
+  color: #7d2827;
+  letter-spacing: 5px;
+}
+.inl{
+  text-decoration-line: line-through;
+  font-weight: bold;
+}
+.yellow{
+  background-color: yellow;
+  font-weight: bold;
+}
+.unl{
+  text-decoration-line: underline;
+  font-style: italic;
+}
+a{
+  color: red;
+  font-style: italic;
+  text-decoration: none;
+}
