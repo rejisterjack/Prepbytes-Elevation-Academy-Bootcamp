@@ -1,0 +1,51 @@
+body{
+  border: 10px solid green;
+  background-color: powderblue;
+  margin: 0;
+  padding: 20px;
+}
+
+.form{
+  border: 6px dashed red;
+  text-align: center;
+  background-color: #fff;
+  color: red;
+  width:fit-content;
+  padding: 15px;
+}
+
+.circle{
+  border-radius: 100%;
+  background-color: #44a99f;
+  width: fit-content;
+  text-align: center;
+  padding: 55px 10px;
+  border: 7px solid gray;
+  font-style: italic;
+  text-decoration-line: underline;
+}
+
+.box{
+  background-color: black;
+  color: #fff;
+  width: fit-content;
+  border: 6px solid red;
+  border-radius: 25px;
+  font-style: italic;
+  font-size: 25px;
+  
+}
+
+.box1{
+  padding: 20px 20px 40px 10px;
+}
+
+.box2{
+  margin-right: 40px;
+  padding: 20px 20px 5px 50px;
+}
+
+.box3{
+  padding: 20px 70px 0px 70px;
+}
+
