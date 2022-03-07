@@ -1,0 +1,150 @@
+body {
+  margin: 0px;
+}
+.header {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 30px;
+  background-image: linear-gradient(
+    to right,red,maroon,lightgreen,orange,gold,yellow
+  );
+}
+.menu {
+  text-align: center;
+  width: 900px;
+  border: 3px solid red;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  background-color: rgb(43, 170, 158);
+  border-radius: 15px;
+}
+li {
+  padding-left: 100px;
+  padding-top: 0px;
+  padding-right: 70px;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+.lorem {
+  border: 1px solid rgb(157, 59, 59);
+  background-color: rgb(94, 145, 140);
+  border-radius: 10px;
+}
+.upper {
+  display: flex;
+  justify-content: space-around;
+}
+.uppr {
+  width: 400px;
+  border: 2px solid brown;
+  background-color: aqua;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+.lower {
+  width: 400px;
+  margin: auto;
+  border: 2px solid brown;
+  background-color: aqua;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+.line {
+  margin: 0px;
+}
+.top-performer {
+  background-image: linear-gradient(to right, brown, yellow 55%, brown);
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.box-container {
+  text-align: center;
+  border: 3px solid brown;
+  background-image: radial-gradient(blue 2%, rgb(36, 187, 192) 50%, green 90%);
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0px;
+  padding-right: 150px;
+}
+.box {
+  background-color: yellow;
+  padding: 0px 30px;
+  text-decoration: underline;
+  border-radius: 15px;
+  border: 2px solid red;
+  color: maroon;
+  font-weight: 700;
+}
+.best {
+  background-color: sienna;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.grid-container {
+  border: 1px solid gray;
+  display: grid;
+  grid-template-columns: repeat(3, 30%) 5%;
+  gap: 15px 15px;
+}
+.b {
+  color: white;
+}
+.b1 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  text-align: center;
+  height: 40px;
+  background-color: rgb(214, 58, 40);
+  font-size: 20px;
+  font-weight: 700;
+}
+.b2 {
+  background-color: salmon;
+  text-align: center;
+  height: 60px;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 0px 95px;
+}
+.b3 {
+  background-color: blueviolet;
+  height: 60px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.b4 {
+  background-color: purple;
+  height: 60px;
+  font-size: 18px;
+}
+.b5 {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  background-color: darkslategray;
+  padding-left: 4px;
+}
+.b6 {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  background-color: goldenrod;
+  height: 140px;
+  font-weight: 700;
+  font-size: 21px;
+}
+.b7 {
+  grid-column: 1/5;
+  grid-row: 4/5;
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  font-weight: bolder;
+  background-color: turquoise;
+}
+
