@@ -49,3 +49,24 @@ body{
   padding: 20px 70px 0px 70px;
 }
 
+.menu_box_item{
+  background-color: #63fbfd;
+    text-align: center;
+    border-radius: 20%;
+    border: 5px solid green;
+    margin: 20px;
+    padding: 10px;
+}
+
+.flex_one{
+  display: flex;
+  /* justify-content: center; */
+  /* margin: auto; */
+  /* flex-direction: column;/ */
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+
