@@ -1,0 +1,14 @@
+.item{
+  color: red;
+}
+
+@media (max-width: 500px) {
+  .item{
+    color: blue;
+  }
+}
+@media (max-width: 800px) {
+  .item{
+    color: yellow;
+  }
+}
