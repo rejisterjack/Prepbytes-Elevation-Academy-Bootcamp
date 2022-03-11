@@ -1,0 +1,127 @@
+body{
+  margin: 0;
+  overflow: hidden;
+ 
+}
+.container{
+   background-image: url("./images/sky.jpg");
+   height: 47rem;
+}
+.car{
+   height: 12rem;
+}
+.flag{
+   height: 4rem;
+   position: relative;
+   right: 12rem;
+   bottom: 7rem;
+}
+.backgrounds{
+   animation-name: movement;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+.sun{
+   height: 7rem;
+   position: absolute;
+   right: 0px;
+   top: 8rem;
+   animation-name: movement;
+   animation-duration: 120s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+.wheel1{
+   position: relative;
+   right: 8.75rem;
+   bottom: 0.5rem;
+}
+.wheel2{
+   position: relative;
+   left: 8rem;
+   bottom: 0.5rem;
+}
+.wheel{
+   height: 5rem;
+   animation-name: wheel;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+}
+.road{
+   height: 20rem;
+   width: 400%;
+   background-image: url(./images/road.jpg);
+   background-repeat: repeat-x;
+}
+.city{
+   background-image: url(./images/city.png);
+   background-repeat: repeat-x;
+   height: 16rem;
+   width: 400%;
+   z-index: 0;
+   position: relative;
+   top: 7px;
+   
+
+}
+.container h1{
+   position: absolute;
+   font-size: 3rem;
+   top: 0px;
+   left: 25rem;
+}
+.container span{
+   margin: 0 1rem;
+}
+.car-container{
+  margin-left: 25rem;
+  z-index: 1;
+  position: relative;
+  top: 23rem;
+}
+
+@keyframes wheel{
+
+   0%{
+       transform: rotate(0deg);
+   }
+   10%{
+       transform: rotate(36deg);
+   }
+   20%{
+       transform: rotate(72deg);
+   }
+   30%{
+       transform: rotate(108deg);
+   }
+   40%{
+       transform: rotate(144deg);
+   }
+   50%{
+       transform: rotate(180deg);
+   }
+   60%{
+       transform: rotate(216deg);
+   }
+   70%{
+       transform: rotate(252deg);
+   }
+   80%{
+       transform: rotate(288deg);
+   }
+   90%{
+       transform: rotate(324deg);
+   }
+   100%{
+       transform: rotate(360deg);
+   }
+}
+@keyframes movement{
+   from{
+       transform: translateX(0px);
+   }
+   to{
+       transform: translateX(-4000px);
+   }
+}
