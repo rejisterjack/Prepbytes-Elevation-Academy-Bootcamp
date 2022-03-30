@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra class-29</title>
+</head>
+
+<body>
+    <h1>Checckbox, radio, Dropdown, Absolute and Relative Path</h1>
+
+    Checckbox: checkbox is used to select more than one option.
+    Radio is used to select only one option
+
+    <br><br>
+
+    for texes, number , email, and password for value will be same <br>
+    for and id and value should be same in your checkbox and radio
+
+    <form action="./index.html">
+
+        <input type="checkbox" name="course1" id="html" value="html">
+        <label for="html">HTML</label><br><br>
+
+        <input type="checkbox" name="course2" id="css" value="css">
+        <label for="css">CSS</label> <br><br>
+
+        <input type="checkbox" name="course3" id="js" value="js">
+        <label for="js">JS</label><br><br>
+
+
+        <input type="radio" name="course" id="html" value="html">
+        <label for="html">HTML</label><br><br>
+
+        <input type="radio" name="course" id="css" value="css">
+        <label for="css">CSS</label> <br><br>
+
+        <input type="radio" name="course" id="js" value="js">
+        <label for="js">JS</label><br><br>
+        <input type="submit">
+
+
+    </form>
+
+    <br><br>
+
+    Absolute Path : which is having full url and that which is taken from online ex: chrome, Internet images <br>
+    Relative Path : Which is taken from the local machine <br><br>
+
+    Alt: somthing whenever the image is not randered we giving some information to our clint <br><br>
+
+    <img width="50%" ,height="50%"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/800px-Google_Images_2015_logo.svg.png"
+        alt="">
+    <br>
+    <img src="" alt="404 error">
+    <br><br><br><br><br>
+
+    <form action="./index.html">
+        <label for="cars">Select the below cars</label>
+        <select name="Brand" id="cars">
+            <option value="">Select Cars</option>
+            <option value="BMW">BMW</option>
+            <option value="AUDI">AUDI</option>
+            <option value="RR">RR</option>
+            <option value="TESLA">TESLA</option>
+            <option value="BENS">BENS</option>
+        </select><br><br>
+        <input type="submit">
+    </form><br> <br><br><br><br><br>
+
+
+    <h2>Tables:</h2>
+
+    <table border="1px" width="1000px" height="100px">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>contact</th>
+
+            </tr>
+            <tr>
+                <td>nilanjan deb</td>
+                <td>23</td>
+                <td>881095555</td>
+            </tr>
+            <tr>
+                <td>nilanjan deb</td>
+                <td>23</td>
+                <td>881095555</td>
+            </tr>
+            <tr>
+                <td rowspan="3">nilanjan deb</td>
+                <td colspan="2">23</td>
+                <!-- <td>881095555</td> -->
+            </tr>
+            <tr>
+                <!-- <td>nilanjan</td> -->
+                <td>23</td>
+                <td>881095555</td>
+            </tr>
+            <tr>
+                <!-- <td>nilanjan</td> -->
+                <td>23</td>
+                <td>881095555</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br><br><br>
+
+    <table border="1" height="200px" width="400px">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Contact</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Nilnajn Deb</td>
+                <td>23</td>
+                <td>564766456</td>
+            </tr>
+            <tr>
+                <!-- <td>Raju</td> -->
+                <td>23</td>
+                <td>564766456</td>
+            </tr>
+            <tr>
+                <td colspan="3">Ramesh</td>
+                <!-- <td>23</td> -->
+                <!-- <td>564766456</td> -->
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
