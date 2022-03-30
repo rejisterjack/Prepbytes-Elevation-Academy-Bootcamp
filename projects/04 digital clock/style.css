@@ -6,4 +6,40 @@
 body{
   font-size: 62.5%;
   background-color: #3d087b;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main_container{
+  border: 2px solid white;
+  height: 80%;
+  width: 80%;
+  margin: 30px auto;
+}
+.left_container{
+  width: 50%;
+}
+.right_container{
+  width: 50%;
+}
+.container_one{
+  background-color: gray;
+  height: 30em;
+  border-radius: 15px;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+.row img, .row p, .row select{
+  display: inline;
+}
+.row p{
+  color: #3d087b;
+  font-size: 1.2rem;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.line{
+  border-left: 1px solid #fff;
+  height: 10px;
 }
