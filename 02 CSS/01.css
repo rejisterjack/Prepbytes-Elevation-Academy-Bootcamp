@@ -1,0 +1,29 @@
+.test{
+  /* background-color: blue; */
+  /* padding: 30px; */
+  /* border: 10px solid red;
+  margin: 30px;
+  width: 200px;
+  */
+  /* border-width: 20px; */
+  /* border-color: aqua; */
+  /* border-top-style: dashed;
+  border-left-style: dotted;
+  border-bottom-style: solid;
+  border-right-style: groove; */
+  /* border-style: dashed dotted solid groove; */
+
+  /* background-color: aqua;
+  width: 200px;
+  height: 30px; */
+} 
+.parent{
+  background-color: blue;
+  height: 50vh;
+  width: 50vw;
+}
+.child{
+  background-color: yellow;
+  height: 50%;
+  width: 50%;
+}
