@@ -24,6 +24,7 @@
 }
 .child{
   background-color: yellow;
-  height: 50%;
+  height: 50px;
   width: 50%;
+  margin: auto;
 }
