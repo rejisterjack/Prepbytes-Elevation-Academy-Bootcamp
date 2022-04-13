@@ -1,0 +1,51 @@
+.box1{
+  width:100px;
+  height:100px;
+  background-color: chartreuse;
+  position: static;
+}
+.box2{
+  width:100px;
+  height:100px;
+  background-color: fuchsia;
+  position:relative;
+  top:50px;
+  left:100px;
+}
+.parent{
+  width:100px;
+  height:100px;
+  background-color: coral;
+  position: relative;
+}
+.box3{
+  width:50px;
+  height:50px;
+  background-color: navy;
+  color: white;
+  position : absolute;
+  top:35px;
+  left:30px;
+}
+.box4{
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  position: absolute;
+  top:500px;
+  right:500px;
+}
+.box5{
+  width: 150px;
+  height: 150px;
+  background-color: yellowgreen;
+  position: fixed;
+  bottom : 0px;
+  right:0px;
+}
+.box6{
+  background-color: darkslategrey;
+  color: white;
+  position: sticky;
+  top:0px;
+}

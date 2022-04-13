@@ -1,0 +1,80 @@
+.box{
+  width:500px;
+  height : 500px;
+  background: linear-gradient(
+      green,
+      red,
+      blue,
+      orange,
+      purple,
+      yellow
+  );
+  font-size: 30px;
+  padding:100px;
+  border:1px solid;
+}
+.box1{
+  width:500px;
+  height : 500px;
+  background: radial-gradient(
+      green,
+      red,
+      blue,
+      orange,
+      purple,
+      yellow
+  );
+  font-size: 30px;
+  padding:100px;
+  border:1px solid;
+}
+.box2{
+  width:100px;
+  height : 100px;
+  background-color: aqua;
+  border : 1px solid ;
+  z-index: 1;
+  position: relative;
+  top:150px;
+}
+.box3{
+  width:150px;
+  height : 100px;
+  background-color: rgb(112, 27, 223);
+  border : 1px solid ;
+  z-index: -1;
+}
+.item1{
+  width:50px;
+  height : 50px;
+  background-color: blue;
+  float:right;
+}
+.item2{
+  width:50px;
+  height : 50px;
+  background-color: orange;
+  float:left;
+}
+.item3{
+  width:50px;
+  height : 50px;
+  background-color: rgb(105, 221, 28);
+  float:right;
+}
+.item4{
+  width:50px;
+  height : 50px;
+  background-color: rgb(230, 13, 13);
+  float:left;
+  clear: right;
+}
+.size{
+  width:200px;
+  height:200px;
+  background-color: olive;
+  color: white;
+  font-size: 30px;
+  box-sizing: border-box;
+  padding : 50px;
+}
