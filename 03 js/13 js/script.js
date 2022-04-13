@@ -38,9 +38,9 @@ let person1 = {
 
 person.showDetails.call(person1) //function borrowing
 
-showDetails.call(person1,"male",21)
+person.showDetails.call(person1,"male",21)
 // apply method takes arguments as arrays
-showDetails.apply(person1,["male",21])
+person.showDetails.apply(person1,["male",21])
 //bind never takes arguments, it only takes object names and gets a function in return
 //the arguments are also passed individually only and not in form of array.
 let result1 = showDetails.bind(person1)
