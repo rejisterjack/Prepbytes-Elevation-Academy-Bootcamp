@@ -1,0 +1,117 @@
+.box1{
+  width: 120px;
+  height: 100px;
+  background-color: aqua;
+  position: absolute;
+  left : 100px;
+  top : 150px;
+}
+.box2{
+  width: 120px;
+  height: 100px;
+  background-color: rgb(66, 32, 189);
+  position: relative;
+  left : 100px;
+  top : 150px;
+}
+.box3{
+  width:100px;
+  height: 100px;
+  background-color: blue;
+  float: left;
+}
+.box4{
+  width:100px;
+  height: 100px;
+  background-color:brown;
+  float: right;
+  clear: left;
+}
+.box5{
+  width:100px;
+  height: 100px;
+  background-color:chartreuse;
+  float: left;
+  clear: right;
+}
+.box6{
+  width:100px;
+  height: 100px;
+  background-color:crimson;
+  float: right;
+  clear: left;
+}
+.box7{
+  width:100px;
+  height: 100px;
+  background-color:darkgreen;
+  float: left;
+  clear: right;
+}
+
+.ball{
+  width:25px;
+  height:25px;
+  background-color: red;
+  border-radius: 50%;
+  /* transition-property: transform; */
+  /* animation-name: jump;
+  animation: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+  animation : demo 1s linear infinite;
+}
+
+@keyframes demo {
+  0%{
+      transform: translateY(50px);
+  }
+  50%{
+      transform: translateY(-100px);
+  }
+  100%{
+      transform: translateY(0px);
+      transform: translateX(5px);
+
+  }
+}
+.f-c{
+  display: flex;
+}
+.card1{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+.card2{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.card3{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+
+}
+.card4{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.card5{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+
+}
+@media only screen and (width:360px){
+  .f-c{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}
