@@ -1,4 +1,4 @@
-// Que.1
+// Que.1:
 function counter(){
   var counter = 0;
 
@@ -16,7 +16,7 @@ alert(counter());
 alert(counter());
 
 
-// Que.2--
+// Que.2:
 let count = 0;
 (function immediate() {
 if (count === 0) {
@@ -27,7 +27,7 @@ console.log(count); // What is logged?
 })();
 //output-- 1 0
 
-//Que-3
+//Que-3:
 
 for (var i = 0; i < 3; i++) {
   setTimeout(function log() {
@@ -36,7 +36,7 @@ for (var i = 0; i < 3; i++) {
 }
 ///Output-- three times 3 
 
-//Que.4--
+//Que.4:
 // Print Output
 
 var a = 12;
@@ -44,7 +44,7 @@ var a = 12;
 alert(a);
 })();
 
-// Que.5--
+// Que.5:
 var a = 10;
 var x = (function () {
 var a = 12;
@@ -54,7 +54,7 @@ return function () {
 })();
 x();
 
-//Que.6
+//Que.6:
 var globalVar = "xyz";
 
 (function outerFunc(outerArg) {
@@ -74,7 +74,7 @@ var globalVar = "xyz";
 })(123);
 
 
-//Que.6-- Write a code to calculate area of a rectangle using inner function. In this case outer function should accept parameter length and inner function should accept parameter breadth.
+// Write a code to calculate area of a rectangle using inner function. In this case outer function should accept parameter length and inner function should accept parameter breadth.
 
 const outerFunction = function(length){
   innerFunction = function(breadth){
@@ -84,7 +84,7 @@ const outerFunction = function(length){
 outerFunction(20);
 innerFunction(50);
 
-//Que.7--Take a variable in outer function and create an inner function to increase the counter every time it is called
+// Take a variable in outer function and create an inner function to increase the counter every time it is called
 
 let outer = function(){
   variableCount = 0;

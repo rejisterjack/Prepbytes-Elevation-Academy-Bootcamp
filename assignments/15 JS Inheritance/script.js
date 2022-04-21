@@ -1,8 +1,8 @@
-//Que.1--Create 2 objects - parent and child. Attach methods to parent and use those methods in child object using parents prototype
+// Create 2 objects - parent and child. Attach methods to parent and use those methods in child object using parents prototype
 
 let parent = {
-  fname:"Atul",
-  lname : "Pandey",
+  fname:"Rupam",
+  lname : "Das",
   showDetails : function(){
       console.log(this.fname + " "+this.lname + " "+ this.gender + " "+ this.age);
 
@@ -11,7 +11,7 @@ let parent = {
 // console.log(parent.fname);
 parent.showDetails()
 let child = {
-  fname : "Rahul",
+  fname : "rohit",
   age : 25,
   gender: "male"
 }
@@ -20,11 +20,11 @@ child.__proto__=parent;///assigning the method and proto type of parent to child
 child.showDetails();
 
 
-//Que-2--Write code to explain prototype chaining
+// Write code to explain prototype chaining
 
 let arr = [1,2,2,4,5];
 let add = function(){
-  console.log("pandey");
+  console.log("rupam");
 }
 
 console.log(add.__proto__);//function
@@ -36,7 +36,7 @@ console.log(Object.prototype);///Object Prototype
 
 //The  final conclusion is that in javaScript everything will be a Object.
 
-//Que-3- Add a method to calculate sum of all elements in Array in array's protype, use that method to calculate sum for multiple arrays
+// Add a method to calculate sum of all elements in Array in array's protype, use that method to calculate sum for multiple arrays
 
 let array = [1,2,3,5,6,7];
 let arr2 = {
