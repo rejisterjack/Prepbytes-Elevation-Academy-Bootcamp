@@ -39,7 +39,9 @@ function girl() {
     var x = 20;
 };
 
-//Output-21
+//Output:
+//undefined
+//21
 
 // Print output
 
