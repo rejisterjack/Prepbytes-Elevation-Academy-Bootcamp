@@ -1,22 +1,25 @@
-// conponent with normal function syntax
+import logo from './logo.svg';
+import './App.css';
 
-// conponent name, file name first letter should be in caps
-
-// conponents => javascript logic(business logic) and user interface (jsx)
-// jsx can have only one parent element
-
-const App = ()=>{
-  const name = "rupam";
-  function getName(){
-    console.log(name);
-  }
-  getName();
-  return(
-    <div>
-      <div>Div 1</div>
-      <div>Div 1</div>
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
-  )
+  );
 }
 
 export default App;
