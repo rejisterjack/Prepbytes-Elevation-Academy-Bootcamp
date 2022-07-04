@@ -47,3 +47,71 @@ function changeText(){
 
 //Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
 
+function clock(){
+  let hours = document.getElementById("hh");
+  let minutes = document.getElementById("mm");
+  let seconds = document.getElementById("ss");
+
+  let time = new Date();
+  let hrs = time.getHours();
+  let mins = time.getMinutes();
+  let secs = time.getSeconds();
+
+  hours.innerText = hrs;
+  minutes.innerText = mins;
+  seconds.innerText = secs;
+}
+setInterval(clock, 1000);
+
+//Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected
+
+function yearChange() {
+  let selectedYear = document.getElementById("yearSelect").value;
+  document.getElementById("year").innerText = selectedYear;
+}
+
+// Create a form having name ,email, phone no. , birth year 
+// Add validations - phone no. should start with 91 , it should be 10 digits
+// email should be domain prepbytes.com
+// birth year should be > 95
+
+function emailCheck() {
+  let a = document.getElementById("email").value;
+  if (!a.endsWith("prepbytes.com")) {
+      let b = document.getElementById("emailcheck");
+      b.style.display = "inline";
+  } else {
+      let b = document.getElementById("emailcheck");
+      b.style.display = "none";
+  }
+}
+
+function numberCheck() {
+  let a = document.getElementById("phoneno").value;
+  if (!a.startsWith("91")) {
+      let b = document.getElementById("startcheck");
+      b.style.display = "inline";
+
+  } else {
+      let b = document.getElementById("startcheck");
+      b.style.display = "none";
+  }
+  if (a.length == 10) {
+      let b = document.getElementById("digitcheck");
+      b.style.display = "inline";
+  } else {
+      let b = document.getElementById("digitcheck");
+      b.style.display = "none";
+  }
+}
+
+function bYearCheck() {
+  let a = document.getElementById("byear").value;
+  if (a < 1995) {
+      let b = document.getElementById("byearcheck");
+      b.style.display = "inline";
+  } else {
+      let b = document.getElementById("byearcheck");
+      b.style.display = "none";
+  }
+}
