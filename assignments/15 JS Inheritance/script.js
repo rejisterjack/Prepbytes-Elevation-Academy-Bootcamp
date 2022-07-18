@@ -48,3 +48,13 @@ let arr2 = {
   }
 }
 arr2.getName();
+
+// Write a JavaScript function to retrieve all the names of object's own and inherited properties.
+let obj={
+    name:'John Doe',
+    college:'Test Institute of Test World',
+    branch:'Test Branch'
+}
+let resultOwn=Object.getOwnPropertyNames(obj);
+let resultInhetited=Object.keys(obj)
+console.log(resultOwn, resultInhetited)
