@@ -86,3 +86,20 @@ console.log(data);
 data.then((res) =>{
   console.log(res);
 });
+
+// Create examples to explain promise.all function
+let test1 = new Promise((resolve, reject) => {
+    resolve("resolve1");
+    reject("reject1");
+  });
+  let test2 = new Promise((resolve, reject) => {
+    resolve("resolve2");
+    reject("reject2");
+  })
+  Promise.all([test1, test2])
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+});
