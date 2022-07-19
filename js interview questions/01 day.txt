@@ -37,14 +37,14 @@ const foo = function() { console.log("foobar");
 }
 foo(); // Invoke it using the variable
 // foobar
-We assigned an Anonymous Function in a Variable, then we used that variable to invoke the function by adding parentheses () at the end.
+Assigned an Anonymous Function in a Variable, then used that variable to invoke the function by adding parentheses () at the end.
 2.Example | Pass a function as an Argument
 function sayHello() { return "Hello, ";
 }
 function greeting(helloMessage, name) { console.log(helloMessage() + name);
 }
 // Pass `sayHello` as an argument to `greeting` function greeting(sayHello, "JavaScript!"); // Hello, JavaScript!
-We are passing our sayHello() function as an argument to the greeting() function, this explains how we are treating the function as a value.
+Passing this sayHello() function as an argument to the greeting() function, this explains how we are treating the function as a value.
 3.Example | Return a function
 function sayHello() { return function() { console.log("Hello!");
 } }
