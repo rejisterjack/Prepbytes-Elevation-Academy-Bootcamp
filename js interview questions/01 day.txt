@@ -1,0 +1,52 @@
+1.Difference between “ == “ and “ === “ operators.
+
+Both are comparison operators. The difference between both the operators is that,“==” is used to compare values whereas,“ === “ is used to compare both value and datatypes.
+var x="2"; var y=2; console.log(x==y); It returns true because it only check values not data types. console.log(x===y); It returns false because we can see though values are same x is of string type and y is of number type so in strict equal comparison operator both value and data types should be same (or)equal
+otherwise it throws as false
+
+
+2. What is the spread operator? 
+
+The spread operator is a new addition to the set of operators in JavaScript ES6. It takes in an iterable (e.g an array) and expands it into individual elements.
+The spread operator is commonly used to make shallow copies of JS objects. Using this operator makes the code concise and enhances its readability. The spread operator is denoted by three dots, ….
+let array1 = ['h', 'e', 'y']; let array2 = [...array1]; console.log(array2);
+Output:[ 'h', 'e', 'y' ]
+
+
+3.What are the differences between var, let and const?
+
+var is a Global or Functional Scoped.it can be reassigned or redeclared and it can be modified later. let is a Block Scoped.it cannot be reassigned or redeclare. let can be modified later.
+const is a Block Scoped.it cannot be reassigned or redeclare.const cannot be modified later.
+
+
+4. What is execution context
+
+The browser's JavaScript engine that creates a special environment to handle the transformation and execution of this JavaScript code. This environment is known as the Execution Context.
+The Execution Context contains the code that's currently running, and everything that aids in its execution.
+During the Execution Context run-time, the specific code gets parsed by a parser, the variables and functions are stored in memory, executable byte-code gets generated, and the code gets executed.
+There are two kinds of Execution Context in JavaScript:
+1. Global Execution Context (GEC)
+2. Function Execution Context (FEC)
+
+
+5.What is meant by first class functions
+
+A programming language is said to have First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable.
+1.Example | Assign a function to a variable
+const foo = function() { console.log("foobar");
+}
+foo(); // Invoke it using the variable
+// foobar
+We assigned an Anonymous Function in a Variable, then we used that variable to invoke the function by adding parentheses () at the end.
+2.Example | Pass a function as an Argument
+function sayHello() { return "Hello, ";
+}
+function greeting(helloMessage, name) { console.log(helloMessage() + name);
+}
+// Pass `sayHello` as an argument to `greeting` function greeting(sayHello, "JavaScript!"); // Hello, JavaScript!
+We are passing our sayHello() function as an argument to the greeting() function, this explains how we are treating the function as a value.
+3.Example | Return a function
+function sayHello() { return function() { console.log("Hello!");
+} }
+In this example; We need to return a function from another function - We can return a
+function because we treated function in JavaScript as a value
