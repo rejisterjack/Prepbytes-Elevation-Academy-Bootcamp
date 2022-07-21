@@ -1,0 +1,133 @@
+1. What are closures? Give an example of closure
+
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+function OuterFunction() { var outerVariable = 100;
+function InnerFunction() {
+console.log(outerVariable); } return InnerFunction;
+}
+var innerFunc=OuterFunction();
+innerFunc();
+
+
+2. Explain call(), apply() and, bind() methods. Give an example of call(), apply(), bind()
+
+call(): The call() method invokes a function with a given this value and arguments provided one by one var employe1={
+name:"vijay", age:21
+} var employe2={ name:"kumar", age:24
+}
+function invite(greeting1,greeting2){ console.log(greeting1+" "+this.name+" "+greeting2)
+} invite.call(employe1,"Hi","How are you") apply:Invokes the function with a given this value and allows you to pass in
+arguments as an array invite.apply(employe2,["hey dude" ,"how are you "])
+bind: returns a new function, allowing you to pass any number of arguments
+var inviteEmploye1=invite.bind(employe1); 
+var inviteEmploye2=invite.bind(employe2);
+inviteEmploye1("hi","how are you")
+inviteEmploye2("hey","how are you doing?")
+
+
+3. What is creation phase and execution phase?
+
+Compiler runs through the entire code for 2 time before actually executing the code,
+1. In the first run, It picks all function declarations and stores them in memory with their reference.
+2. In the second run, It picks all variables and assign undefined to them. In the event of a conflict between variable and function declaration name then that variable is ignored.
+
+Execution Phase
+1. Variables assigned with values
+2. Functions executed
+
+4. What are objects in javascript?
+
+Object is a non-primitive data-type that allows you to store multiple collections of data.
+const obj = {
+	name: "rupam",
+	age: 22,
+}
+
+5. What are function constructors?
+
+The Function constructor creates a new Function object. Calling the constructor directly can create functions dynamically,
+but suffers from security and similar (but far less significant) performance issues to Global_Objects/eval.
+However, unlike eval, the Function constructor creates functions which execute in the global scope only.
+
+  const sum = new Function('a', 'b', 'return a + b');
+  console.log(sum(2, 6));
+
+
+6. Explain prototypes
+
+A prototype is a blueprint of an object. Prototype allows us to use properties and methods on an object even if the properties and methods do not exist on the current object. prototype Object will be created inside the object which refers to the prototype constructor const parentObject={
+name:"vijay", age:21,
+} var childObect=Object.create(parentObject) console.log(parentObject.name);
+console.log(childObect.name);
+
+
+7. What is prototype chain
+
+A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+A Promise is in one of these states:
+pending: initial state, neither fulfilled nor rejected. fulfilled: meaning that the operation was completed successfully. rejected: meaning that the operation failed.
+Benefits of Promises
+1. Improves Code Readability 2. Better handling of asynchronous operations
+3. Better flow of control definition in asynchronous logic
+4. Better Error Handling
+
+8. Give an example of inheritance using function constructor
+
+function Employee(name, age, gender, id) {
+this.name = name;
+this.age = age;
+          this.gender = gender;
+            this.id = id;
+        };
+  
+        function Developer(name, age, gender, id, 
+       specialization) {
+  
+            // Calling Employee constructor function
+            Employee.call(this, name, age, gender, id);
+  
+            // Adding a new parameter
+            this.specialization = specialization;
+        }
+        console.log(Employee.prototype);
+        console.log(Developer.prototype);}
+asyncCall();
+
+9. What are callbacks?
+
+A callback function is a function passed into another function as an argument.
+This function is invoked inside the outer function to complete an action.
+
+
+  function callbackFunction(name) {
+      console.log('Hello ' + name);
+    }
+    
+    function outerFunction(callback) {
+      let name = prompt('Please enter your name.');
+      callback(name);
+    }
+    
+    outerFunction(callbackFunction);
+
+10. What is the use of setTimeout
+
+The setTimeout() is a method inside the window object, it calls the specified function or evaluates a JavaScript expression provided as a string after a given time period for only once.
+We all have used alarms or reminders several times, this setTimeout() method also has the same purpose in web applications. We use this to delay some kind of executions.
+
+function showTime() {
+    let dateTime= new Date();
+    let time = dateTime.toLocaleTimeString();
+    console.log(time)
+     setTimeout(showTime, 3000);
+}
+showTime();
+
+11. What is an event loop and call stack
+
+A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions —
+what function is currently being run and what functions are called from within that function, etc.
+
+The event loop is a constantly running process that monitors both the callback queue and the call stack.
+
+If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack. If the callback queue is empty, nothing will happen

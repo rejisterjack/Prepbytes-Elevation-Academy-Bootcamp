@@ -1,0 +1,173 @@
+1. What are promises and why do we need them?
+A Promise is a proxy for a value not necessarily known when the promise is created.
+It allows you to associate handlers with an asynchronous action's eventual success value or failure reason.
+This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value,
+the asynchronous method returns a promise to supply the value at some point in the future.
+
+Benefits of Promises
+1. Improves Code Readability
+2. Better handling of asynchronous operations
+3. Better flow of control definition in asynchronous logic
+4. Better Error Handling
+
+Example--
+    var promise=new Promise(function(resolve,reject){
+        let x=10;
+        let y=10;
+        if(x===y){
+            resolve();
+        }
+        else{
+            reject();
+        }
+    })
+    promise.then(function(){
+        console.log("equal");
+    }).catch(function(){
+        console.log("not equal")
+    });
+2. What is the purpose of async/await keywords?
+An async function is a function declared with the async keyword, and the await keyword is permitted within it.
+The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style,
+avoiding the need to explicitly configure promise chains.
+
+Example--
+    async function f() {
+
+        let promise = new Promise((resolve, reject) => {
+          setTimeout(() => resolve("done!"), 1000)
+        });
+      
+        let result = await promise; // wait until the promise resolves (*)
+      
+        alert(result); 
+      }
+      
+      f();
+3. What is hoisting?
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
+JavaScript only hoists declarations, not initialisation.
+
+        console.log(hello); 
+          var hello = 'The variable Has been hoisted';
+The above code looks like as below to the interpreter,
+
+    var hello;
+console.log(hello);
+hello = 'The variable Has been hoisted';
+
+4. What is the DOM?
+DOM stands for Document Object Model,(DOM) is a programming interface for web documents.
+It represents the page so that programs can change the document structure, style, and content.
+The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+
+5. Difference between undefined vs not defined vs NaN
+Undefined-
+undefined is a global variable that JavaScript creates at run time.
+JavaScript assigns undefined to any variable that has been declared but not initialized or defined.
+
+    let hello;
+    console.log(hello); 
+   
+Not defined-
+A not defined is a variable that is not declared at a given point of time with declaration keyword like var, let, or const.
+
+    let hello = 25;
+console.log(hi) 
+ 
+NaN-
+it is "not a number".it represents a value which is not a valid number.
+
+    console.log("hi"/5);
+    console.log(Math.sqrt(-1))
+ 
+6. How many operators do we have in JS ?
+We have 6 types of operators in JS they are
+
+1. Arithmetic Operators
+2. Comparison Operators
+3. Logical Operators
+4. Assignment Operators
+5. Conditional Operators
+6. Ternary Operator
+
+7. What are pure functions?
+Pure Function is a function (a block of code ) that always returns the same result if the same arguments are passed.
+It does not depend on any state, or data change during a program’s execution rather it only depends on its input arguments.
+
+        function pure(i) {
+            console.log(i * 4);//it will always return 16 for input 4.
+          }
+          pure(4);
+               
+    
+8. What is callback hell
+Callback Hell is an anti-pattern with multiple nested callbacks
+which makes code hard to read and debug when dealing with asynchronous logic.
+
+        function printNums(){
+            setTimeout(()=>{
+                console.log("1");
+                setTimeout(()=>{
+                    console.log("2");
+                    setTimeout(()=>{
+                        console.log("3");        
+                        setTimeout(()=>{
+                            console.log("4");        
+                            setTimeout(()=>{
+                                console.log("5");
+                              setTimeout(()=>{
+                                  console.log("6");       
+                                  setTimeout(()=>{
+                                      console.log("7");                                     
+                                          console.log("End of Callback hell");                                
+                                  },1000)
+                              },1000)
+                            },1000)
+                        },1000);
+                    },1000);
+                },1000);
+            },1000);
+        } 
+       printNums()
+        
+    
+9. What is promise chaining
+What is promise chaining
+
+        new Promise(function(resolve, reject) {
+            setTimeout(() => resolve(1), 1000);          
+          }).then(function(result) {         
+            console.log(result); 
+            return result * 2;         
+          }).then(function(result) {          
+            console.log(result); 
+            return result * 3;          
+          }).then(function(result) {          
+            console.log(result); 
+            return result * 4;          
+          });
+          
+          
+    
+10. What are arrow functions?
+it is one of the featured introduced in ES6 version of js.it is basically an alterante to the regular function expression. it allows us to create function in a cleaner way. it is also an anonymous function since it doesnt have any name.
+
+        let x = function(x, y) {
+            return x * y;
+        }
+     x(4,5)
+            
+    
+11. Give an example of async/await
+        async function foo(){
+            let promise=new Promise(function(resolve,reject){
+                setTimeout(()=>resolve("resolved"),2000);
+            })
+            let result=await promise;
+            console.log(result);
+        }
+        foo();
+
+
+    
